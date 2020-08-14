@@ -69,9 +69,24 @@ const postBookmark = (req, res) => {
   return;
 };
 
+const deleteBookmark= (req,res)=>{
+  const {id}= req.params;
+  const index =bookmarks.findIndex(bookmark => bookmark.id === id);
+  if (index === -1){
+    logger.error(`Bookmark id : ${id} not found`);
+    return res
+      .status (404).send ('Bookmark not found');
+  }
+  bookmarks.splice(index, 1);
+  res.send('Deleted');
+};
+
+
 bookmarksRouter.get('/bookmarks', listBookmarks);
 
 bookmarksRouter.get('/bookmarks/:id', findBookmark);
 
 bookmarksRouter.post('/bookmarks', bodyParser, postBookmark);
+
+bookmarksRouter.delete('/bookmarks/:id', deleteBookmark);
 module.exports = bookmarksRouter;
