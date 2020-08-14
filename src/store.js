@@ -6,5 +6,19 @@ const bookmarks = [
     rating: 4,
     description: 'Google',
   },
+  {
+    id: '2',
+    url: 'https://twitter.com',
+    title: 'Twitter',
+    rating: 5,
+    description: 'Twitter',
+  },
+  {
+    id: '3',
+    url: 'https://Hulu.com',
+    title: 'Hulu',
+    rating: 1,
+    description: 'Hulu',
+  },
 ];
 module.exports = bookmarks;

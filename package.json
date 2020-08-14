@@ -1,7 +1,7 @@
 {
   "name": "express-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate project used for starting new projects!",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
@@ -27,5 +27,16 @@
     "mocha": "^8.1.1",
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-ei-quail/bookmarks-server-patrick-kayleigh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thinkful-ei-quail/bookmarks-server-patrick-kayleigh/issues"
+  },
+  "homepage": "https://github.com/thinkful-ei-quail/bookmarks-server-patrick-kayleigh#readme"
 }
